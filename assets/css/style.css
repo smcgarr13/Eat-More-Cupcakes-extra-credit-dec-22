@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.root {
+    /* font-family: 'Josefin', 'Koulen', 'lexend';   */
+    font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
+    font-family: 'Poppins', 'Questrial', 'Quicksand';
+}
+
+/* header and navbar style info */
+header {
+    padding: 20px 30px 20px 0;
+    width: auto;
+    font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
+    font-size: 1.75rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+}
+
+h1 {
+    margin: 0;
+    width: auto;
+    padding: 13px 5px 13px 5px;
+    /* font-family: 'Josefin', 'Koulen', 'lexend'; */
+    /* font-family: 'Fredoka One', 'Rubik Mono One', 'Lilita One', */
+    font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
+    font-size: 3.5rem;
+    line-height: .75;
+    /* background-color: rgb(174, 220, 253); */
+    color: black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+/* referenced https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions for transitions */
+nav ul li a {
+    /* border-bottom: 3px solid rgb(174, 220, 253); */
+    margin: 0;
+    font-family: 'Poppins', 'Questrial', 'Quicksand';
+    font-size: 1.2rem;
+    text-decoration: none;
+    /* color: rgb(174, 220, 253); */
+    color: black;
+    padding: 8px 16px;
+    transition: all 2s ease-in-out;
+}
+
+/* .menu {
+    border-bottom: 3px solid pink;
+}
+
+.cart {
+    border-bottom: 3px solid rgb(174, 220, 253);
+}
+
+.home {
+    border-bottom: 3px solid rgb(185, 126, 240);
+}
+
+.contact {
+    border-bottom: 3px solid rgb(255, 161, 126);
+} */
+
+li.menu:hover {
+    /* border-bottom: 3px solid pink; */
+    background-color: pink;
+    background-size: 60%; 
+}
+
+li.cart:hover {
+    /* border-bottom: 3px solid rgb(174, 220, 253); */
+    background-color:  rgb(174, 220, 253);
+    background-size: 60%;
+}
+
+li.home:hover {
+    /* border-bottom: 3px solid rgb(185, 126, 240); */
+    background-color:  rgb(185, 126, 240);
+    background-size: 75% 75%;
+}
+
+li.contact:hover {
+    /* border-bottom: 3px solid rgb(255, 161, 126); */
+    background-color: rgb(255, 161, 126);
+    background-size: 75% 75%;
+}
+
+/* nav a:hover {
+    background-color: rgb(174, 220, 253);
+    background-size: 75% 75%;
+    color: rgb(57, 57, 57);
+} */
+
+/* responsive features for header and nav */
+@media screen and (max-width: 980px) {
+header {
+    padding: 0 0 13px 0;
+    justify-content: center;
+    text-align: center;
+    transition: all 2s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 13px;
+    width: 100%;
+    padding: 18px 0 10px 0;
+    font-size: 13vw;
+}
+
+nav {
+    justify-content: center;
+}
+} 
+
+@media screen and (max-width: 768px) {
+h1 {
+  justify-content: center;
+  text-align: center;
+}
+
+nav ul li a { 
+    font-size: .85rem;
+    padding: 6px 12px;
+}
+}
+
+/* hero section info */
+/* referenced https://www.w3schools.com/howto/howto_css_hero_image.asp */
+.hero {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    background-image: url("../images/landing_page-04.png");
+   /* Photo Credit to Betwixt Studios */
+    min-height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: end;
+    background-color: pink;
+    color: black;
+    padding: 13px 8px 13px 8px;
+    max-height: 65px;
+    margin-bottom: 26px;
+    font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
+    /* font-size: 13vw; */
+    line-height: .8;
+}
+
+h2 {
+    font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
+    text-align: start;
+    margin: 0;
+    font-size: 5vw;
+    color: black;
+  }
+
+/* responsive features for "hero" section*/
+@media screen and (max-width: 980px) {
+    .hero {
+    min-height: 500px;
+    flex-shrink: inherit;
+}
+
+.hero-text {
+    justify-content: center;
+    text-align: center;
+    /* font-size: 5vw; */
+    margin: 0;
+    width: 100%;
+    max-height: 80px;
+    transition: all 2s ease-in-out;
+}
+}
+
+@media screen and (max-width: 768px) {
+.hero {
+    min-height: 700px;
+    flex-shrink: inherit;
+}
+}
+
+@media screen and (max-width: 400px) {
+    .hero {
+        min-height: 700px;
+        flex-shrink: inherit;
+    }
+
+    .hero-text {
+        margin-bottom: 13px;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding: 18px 0 10px 0;
+        font-size: 5vw;
+    }
+    }
+
+main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
