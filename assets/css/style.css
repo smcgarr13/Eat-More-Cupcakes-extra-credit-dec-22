@@ -12,7 +12,7 @@
 
 /* header and navbar style info */
 header {
-    padding: 20px 30px 20px 0;
+    padding: 20px 30px 20px 20px;
     width: auto;
     font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
     font-size: 1.75rem;
@@ -53,7 +53,7 @@ nav ul li a {
     /* border-bottom: 3px solid rgb(174, 220, 253); */
     margin: 0;
     font-family: 'Poppins', 'Questrial', 'Quicksand';
-    font-size: 1.2rem;
+    font-size: 1.75rem;
     text-decoration: none;
     /* color: rgb(174, 220, 253); */
     color: black;
@@ -89,7 +89,7 @@ li.cart:hover {
     background-size: 60%;
 }
 
-li.home:hover {
+li.facts:hover {
     /* border-bottom: 3px solid rgb(185, 126, 240); */
     background-color:  rgb(185, 126, 240);
     background-size: 75% 75%;
@@ -117,10 +117,13 @@ header {
 }
 
 h1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 13px;
     width: 100%;
-    padding: 18px 0 10px 0;
-    font-size: 13vw;
+    padding: 18px 0 18px 0;
+    font-size: 10vw;
 }
 
 nav {
@@ -132,6 +135,8 @@ nav {
 h1 {
   justify-content: center;
   text-align: center;
+  margin-bottom: 5px;
+  padding: 27px 0 18px 0;
 }
 
 nav ul li a { 
@@ -148,7 +153,7 @@ nav ul li a {
     flex-wrap: nowrap;
     background-image: url("../images/landing_page-04.png");
    /* Photo Credit to Betwixt Studios */
-    min-height: 700px;
+    min-height: 1900px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,16 +178,17 @@ nav ul li a {
 h2 {
     font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
     text-align: start;
-    margin: 0;
-    font-size: 5vw;
+    margin:  0 15px 0 15px;
+    font-size: 3vw;
     color: black;
   }
 
 /* responsive features for "hero" section*/
 @media screen and (max-width: 980px) {
     .hero {
-    min-height: 500px;
-    flex-shrink: inherit;
+    min-height: 1100px;
+    /* flex-shrink: inherit; */
+    flex-wrap: wrap;
 }
 
 .hero-text {
@@ -199,18 +205,19 @@ h2 {
 @media screen and (max-width: 768px) {
 .hero {
     min-height: 700px;
-    flex-shrink: inherit;
+    /* flex-shrink: inherit; */
+    /* flex-wrap: wrap; */
 }
 }
 
 @media screen and (max-width: 400px) {
     .hero {
-        min-height: 700px;
-        flex-shrink: inherit;
+        min-height: 550px;
+        ;
     }
 
     .hero-text {
-        margin-bottom: 13px;
+        margin-bottom: 0;
         flex-wrap: nowrap;
         width: 100%;
         padding: 18px 0 10px 0;
@@ -222,3 +229,104 @@ main {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+
+
+
+
+
+/* contact me */
+
+h3 {
+    font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
+    text-align: start;
+    margin:  15px 15px 0 15px;
+    font-size: 3vw;
+    color: black;
+  }
+
+address {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+address ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/* referenced https://www.google.com/search?q=using+transitions+for+menu+items+css&oq=using+transitions+for+menu+items+css&aqs=chrome..69i57.8618j0j7&sourceid=chrome&ie=UTF-8#cobssid=s&fpstate=ive&vld=cid:9ed0cbfb,vid:e9ol1i4xkYI */
+/* referenced https://www.youtube.com/watch?v=bLn15pjC6Pc */
+/* referenced https://www.google.com/search?q=using+transitions+for+menu+items+css&oq=using+transitions+for+menu+items+css&aqs=chrome..69i57.8618j0j7&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:8b33a17b,vid:YKAzmVA6vqY */
+
+address ul li a {
+    display: inline-block;
+    border-bottom: 2px solid black;
+    margin: 0 0 0 15px;
+    font-family: 'Poppins', 'Questrial', 'Quicksand';
+    font-size: 1.75vw;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    transition: all 2s ease-in;
+    padding: 8px 16px;
+}
+
+li.tel:hover {
+    /* border-bottom: 3px solid pink; */
+    background-color: rgb(255, 161, 126);
+    background-size: 60%; 
+}
+
+li.email:hover {
+    /* border-bottom: 3px solid rgb(174, 220, 253); */
+    background-color:  rgb(185, 126, 240);
+    background-size: 60%;
+}
+
+li.address:hover {
+    /* border-bottom: 3px solid rgb(185, 126, 240); */
+    background-color:  rgb(174, 220, 253);
+    background-size: 60%;
+}
+
+li.hours:hover {
+    /* border-bottom: 3px solid rgb(255, 161, 126); */
+    background-color: pink;
+    background-size: 60%;
+}
+
+
+/* responsive features for contact info */
+@media screen and (max-width: 980px) {
+    address ul li a {
+        display: flex;
+        justify-content: space space-around;
+        /* margin-right: 25px; */
+        font-family: 'Poppins', 'Questrial', 'Quicksand';
+        font-size: 1.5vw;
+        font-style: normal;
+        text-decoration: none;
+        color: black;
+        transition: all 2s ease-in-out;
+        padding: 16px 0;
+    }
+} 
+
+
+.address a:hover {
+    background-size: 75% 75%;
+     color: rgb(174, 220, 253);
+ }
+
+
+ footer {
+    font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
+    text-align: start;
+    margin:  15px 15px 15px 15px;
+    font-size: 1.5vw;
+    color: black;
+ }
