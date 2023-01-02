@@ -46,18 +46,19 @@ nav {
 nav ul li {
     list-style-type: none;
     display: inline;
+    margin: 0;
 }
 
 /* referenced https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions for transitions */
 nav ul li a {
     /* border-bottom: 3px solid rgb(174, 220, 253); */
-    margin: 0;
+    margin: 13px;
+    /* padding: 20px; */
     font-family: 'Poppins', 'Questrial', 'Quicksand';
     font-size: 1.75rem;
     text-decoration: none;
     /* color: rgb(174, 220, 253); */
     color: black;
-    padding: 16px 16px;
     transition: all 2s ease-in-out;
 }
 
@@ -80,25 +81,41 @@ nav ul li a {
 li.menu:hover {
     /* border-bottom: 3px solid pink; */
     background-color: pink;
-    background-size: 60%; 
+    border-radius: 13px;
+    /* background-size: 60%;  */
+    padding: 0 0 8px 0;
+    margin: 20px 10px;
 }
 
 li.cart:hover {
     /* border-bottom: 3px solid rgb(174, 220, 253); */
     background-color:  rgb(174, 220, 253);
-    background-size: 60%;
+    border-radius: 13px;
+    /* background-size: 60%; */
+    padding: 0 0 8px 0;
+    margin: 20px 10px;
 }
 
 li.facts:hover {
     /* border-bottom: 3px solid rgb(185, 126, 240); */
     background-color:  rgb(185, 126, 240);
-    background-size: 60%;
+    border-radius: 13px;
+    /* background-size: 60%; */
+    padding: 0 0 8px 0;
+    margin: 20px 10px;
 }
 
 li.contact:hover {
     /* border-bottom: 3px solid rgb(255, 161, 126); */
     background-color: rgb(255, 161, 126);
-    background-size: 60%;
+    border-radius: 13px;
+    /* background-size: 60%; */
+    padding: 0 0 8px 0;
+    margin: 20px 10px;
+}
+
+nav ul li a:hover {
+    color: white;
 }
 
 /* nav a:hover {
@@ -108,9 +125,10 @@ li.contact:hover {
 } */
 
 /* responsive features for header and nav */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1034px) {
 header {
-    padding: 0 0 13px 0;
+    margin-bottom: 100px;
+    padding: 0 0 24px 0;
     justify-content: center;
     text-align: center;
     transition: all 2s ease-in-out;
@@ -122,7 +140,7 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 13px 0;
+    margin: 24px 0 21px 0;
     width: 100%;
     padding: 18px 0 18px 0;
     font-size: 10vw;
@@ -134,12 +152,50 @@ nav ul li a {
     color: white;
 }
 
+nav ul li a:hover {
+    color: black;
+}
+
+
+/* li.menu {
+    border-bottom: 2px solid pink;
+    margin: 8px;
+    border-radius: 13px;
+    color: pink;
+}
+
+li.cart {
+    border-bottom: 2px solid rgb(174, 220, 253);
+    margin: 8px;
+    border-radius: 13px;
+    color:  rgb(174, 220, 253);
+}
+
+li.facts {
+    border-bottom: 2px solid rgb(185, 126, 240);
+    margin: 8px;
+    border-radius: 13px;
+    color:  rgb(185, 126, 240);
+}
+
+li.contact {
+    border-bottom: 2px solid rgb(255, 161, 126);
+    margin: 8px;
+    border-radius: 13px;
+    color: rgb(255, 161, 126);
+} */
+
+
 nav {
     justify-content: center;
 }
 } 
 
 @media screen and (max-width: 768px) {
+    header {
+        margin-bottom: 125px;
+    }
+
 h1 {
   justify-content: center;
   text-align: center;
@@ -148,10 +204,21 @@ h1 {
 }
 
 nav ul li a { 
-    font-size: .85rem;
+    font-size: 1rem;
     padding: 6px 12px;
 }
 }
+
+@media screen and (max-width: 390px) {
+    header {
+        margin-bottom: 50px;
+    }
+    nav ul li a { 
+        font-size: .75rem;
+        padding: 6px 12px;
+    }
+}
+
 
 /* hero section info */
 /* referenced https://www.w3schools.com/howto/howto_css_hero_image.asp */
@@ -192,7 +259,7 @@ h2 {
   }
 
 /* responsive features for "hero" section*/
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1034px) {
     .hero {
     min-height: 1100px;
     /* flex-shrink: inherit; */
@@ -225,7 +292,7 @@ h2 {
 }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 390px) {
     .hero {
         min-height: 550px;
         ;
@@ -241,7 +308,7 @@ h2 {
     }
 
     h2 {
-        font-size: 5vw;
+        font-size: 4vw;
       }
 
 main {
@@ -320,7 +387,7 @@ li.hours:hover {
 
 
 /* responsive features for contact info */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1034px) {
     address ul li a {
         display: flex;
         justify-content: space space-around;
@@ -341,11 +408,348 @@ li.hours:hover {
      color: rgb(174, 220, 253);
  }
 
-
  footer {
     font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
-    text-align: start;
+    text-align: center;
     margin:  15px 15px 15px 15px;
-    font-size: 1.5vw;
+    font-size: 5vw;
     color: black;
  }
+ 
+ footer a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ footer a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    padding: 11px 16px;
+}
+
+@media screen and (max-width: 390px) {
+footer {
+    text-align: start;
+    font-size: 1.5vw;
+ }
+}
+
+.hidden {
+    display: none;
+  }
+
+/* menu page */
+/* referenced: https://swiperjs.com/get-started */
+/* referenced: https://codevoweb.com/lc26-build-food-ordering-website-html-css-javascript/ */
+/* .swiper {
+    width: 600px;
+    height: 300px;
+  } */
+
+/* store page */
+
+/* section {
+    font-family: 'Poppins', 'Questrial', 'Quicksand';
+    font-size: 5vw; */
+    /* line-height: 22px; */
+    /* margin: 13px;
+    padding: 13px;
+    text-align: center; */
+/* } */
+.shop-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0 50px 100px 50px;
+    transition: all 2s ease-in-out;
+}
+
+.shop-cupcake-flavor {
+    font-family: 'Poppins', 'Questrial', 'Quicksand';
+    font-size: 5vw;
+    /* line-height: 22px; */
+    width: 100%;
+    margin: 40px;
+    padding: 13px;
+    text-align: center;
+}
+
+.shop-cupcake-image {
+    /* display: flex; */
+    /* justify-content: center;
+    text-align: center; */
+   /* Photo Credit to Betwixt Studios */
+    max-height: 1200px;
+    width: 100%;
+    object-fit: cover;
+    /* position: relative; */
+}
+
+
+.shop-cupcake-button {
+    border: none;
+    background-color: black;
+    border-radius: 13px;
+    color: white;
+    font-family: 'Poppins', 'Questrial', 'Quicksand';
+    font-size: 5vw;
+    /* line-height: 22px; */
+    margin: 13px;
+    padding: 13px;
+    text-align: end;
+    cursor: pointer;
+    }
+
+    /* respponsive features for shop page */
+
+
+    @media screen and (max-width: 1034px) {
+        /* .menu-section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        } */
+
+        .shop-item {
+            margin: 0 50px 135px 50px;
+            /* min-width: 200px; */
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* flex-basis: 48.75%; */
+            justify-content: center;
+            text-align: center;
+            transition: all 2s ease-in-out;
+        }
+        
+        .shop-cupcake-flavor {
+            font-size: 3vw;
+            width: 100%;
+            margin: 50px 0 50px 0;
+            padding: 13px;
+            text-align: center;
+        }
+        
+        .shop-cupcake-price {
+            display: none;
+            visibility: hidden;
+        }
+        
+        .shop-cupcake-image {
+            /* max-height: 300px;
+            width: 100%; */
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            /* position: relative; */
+        }
+        
+        .shop-cupcake-button {
+            font-size: 3vw;
+            margin: 0;
+            padding: 13px;
+            text-align: end;
+            }
+    }
+        
+        
+    @media screen and (max-width: 768px) {
+        .shop-item {
+            margin: 0 50px 175px 50px;
+        }
+        
+        .shop-cupcake-flavor {
+            font-size: 5vw;
+            width: 100%;
+            /* line-height: 22px; */
+            margin: 15px 0 15px 0;
+        }
+        
+        .shop-cupcake-price {
+            display: none;
+            visibility: hidden;
+        }
+        
+        .shop-cupcake-image {
+            max-height: 700px;
+            width: 100%;
+        }
+        
+        .shop-cupcake-button {
+            font-size: 5vw;
+            margin: 0;
+            padding: 13px;
+            }
+    }
+        
+    @media screen and (max-width: 390px) {
+        .shop-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            margin: 0 50px 75px 50px;
+        }
+        
+        .shop-cupcake-flavor {
+            font-family: 'Poppins', 'Questrial', 'Quicksand';
+            font-size: 5vw;
+            width: 100%;
+            /* line-height: 22px; */
+            margin: 15px 0 15px 0;
+            padding: 13px;
+            text-align: center;
+        }
+        
+        .shop-cupcake-image {
+            /* display: flex; */
+            /* justify-content: center;
+            text-align: center; */
+           /* Photo Credit to Betwixt Studios */
+            max-height: 400px;
+            width: 400px;
+            object-fit: cover;
+            /* position: relative; */
+        }
+        
+        .shop-cupcake-button {
+            border: none;
+            background-color: black;
+            border-radius: 13px;
+            color: white;
+            font-family: 'Poppins', 'Questrial', 'Quicksand';
+            font-size: 5vw;
+            /* line-height: 22px; */
+            margin: 0;
+            padding: 13px;
+            text-align: end;
+            cursor: pointer;
+            }
+    }
+
+
+
+    /* shopping cart */
+    /* referenced https://www.youtube.com/watch?v=YeFzkC2awTM */
+    .cart-header {
+        font-weight: bold;
+        font-size: 1.25em;
+        color: black;
+    }
+
+    .cart-row {
+        display: flex;
+        font-family: 'Poppins', 'Questrial', 'Quicksand';
+        font-size: 3vw;
+    }
+    
+    .cart-column {
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid black;
+        margin-right: 1.5em;
+        padding-bottom: 10px;
+        margin: 10px 15px 0 15px;
+    }
+    
+    .cart-item {
+        width: 45%;
+    }
+    
+    .cart-price {
+        width: 20%;
+        font-size: 1.2em;
+        color: #333;
+    }
+    
+    .cart-quantity {
+        width: 35%;
+    }
+    
+    .cart-item-title {
+        color: black;
+        margin-left: 15px;
+        font-size: 3vw;
+    }
+
+    .cart-item-image {
+        width: 75px;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .btn-danger {
+        color: white;
+        background-color: pink;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        padding: 8px 13px 13px 13px;
+    }
+    
+    .btn-danger:hover {
+        background-color: pink;
+    }
+    
+    .cart-quantity-input {
+        height: 34px;
+        width: 50px;
+        border-radius: 5px;
+        border: 1px solid #56CCF2;
+        background-color: #eee;
+        color:black;
+        padding: 0;
+        text-align: center;
+        font-size: 1.2em;
+        margin-right: 25px;
+    }
+    
+    .cart-row:last-child {
+        border-bottom: 1px solid black;
+    }
+    
+    .cart-row:last-child .cart-column {
+        border: none;
+    }
+    
+    .cart-total {
+        font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
+        text-align: end;
+        margin: 10px 15px 0 0;
+        font-size: 3vw;
+    }
+    
+    .cart-total-title {
+        font-weight: bold;
+        font-size: 1.5em;
+        color: black;
+        margin-right: 20px;
+    }
+    
+    .cart-total-price {
+        color: #333;
+        font-size: 1.1em;
+    }
+    
+    .btn-purchase {
+        background-color: black;
+        color: white;
+        border-radius: 13px;
+        font-family: 'Poppins', 'Questrial', 'Quicksand';
+        display: block;
+        margin: 40px auto 80px auto;
+        font-size: 5vw;
+        padding: 13px;
+        /* text-align: end; */
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 390px) {
+        .btn-purchase {
+            margin: 40px auto 80px auto;
+            font-size: 5vw;
+        }
+    }

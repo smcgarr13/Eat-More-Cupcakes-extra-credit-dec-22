@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toronto Cupcakes | Eat More Cupcakes!</title>
-    <link rel="stylesheet" media="max-width: 980px" href="./assets/css/style.css" />
+    <link rel="stylesheet" media="max-width: 1034px" href="./assets/css/style.css" />
     <link rel="stylesheet" media="max-width: 768px" href="./assets/css/style.css" />
     <link rel="stylesheet" media="max-width: 400px" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -17,20 +17,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lilita+One&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <script src="assets/js/store.js" async></script>
 </head>
 <body>
     <header id="home">
         <h1>Toronto Cupcakes</h1>
         <nav>
           <ul>
-              <li class="menu"><a href="https://www.torontocupcake.com/cupcakes.html">menu</a></li>
+              <!-- <li class="menu"><a href="https://www.torontocupcake.com/cupcakes.html">menu</a></li> -->
+              <li class="menu"><a href="menu-section">menu</a></li>
               <li class="cart"><a href="https://www.torontocupcake.com/cgi-bin/html-cart/html-cart.cgi?display_cart=yes&page=cupcakes.html">cart</a></li>
               <li class="facts"><a href="https://www.torontocupcake.com/faqs.html">Q&A</a></li>
               <li class="contact"><a href="#contact">contact</a></li>
           </ul>
         </nav>
       </header>
-    </div>
       <!-- hero image/avatar -->
       <!-- referenced https://www.w3schools.com/howto/howto_css_hero_image.asp -->
           <section class="hero">
@@ -39,6 +40,31 @@
                   <h2> What's your flavor? </h2>
               </div>
           </section>
+
+
+        <!-- Menu Section -->
+        <!-- referenced: https://codevoweb.com/lc26-build-food-ordering-website-html-css-javascript/ -->
+        <section class="hidden" id="menu-section">
+            <!-- <section class="section recipes" id="recipes"> -->
+            <h2>Up for trying something new this time?</h2>
+            <div class="row-container">
+              <div class="filters-d-flex">
+                <span data-filter="All-Flavors">See All Cupcakes</span>
+                <span data-filter="More-to-Come">More to Come</span>
+              </div>
+              <div class="products">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper" id="products-wrapper">
+                    <div class="pagination">
+                        <div class="custom-pagination"></div>
+                      </div>
+                </div>
+                </div>
+                </div>
+                </div>
+        </section>
+
+
 
           <section class="page-section" id="contact">
             <h3>Oh, hi there!</h3>
@@ -57,5 +83,6 @@
     
 <footer> <a href="#home">Check Ya on the Flip-Side!</a></footer>
 
+<script src="assets/js/script.js"></script>    
 </body>
 </html>
