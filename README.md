@@ -1,33 +1,10 @@
 # Extra-Credit-Dec-22
-extra credit challenge 
+extra credit challenge: Spruce up an application for an existing business/non-profit.
 
+## Description
 
-# Extra Credit
+This code was created to provide a better user experience for the application.
 
-## Your Task
-
-
-This extra credit challenge requires you to find a business or non-profit of your choice and redo their application. You will be doing this from scratch, so get creative! Your main goal is to have a better user experience for the application.
-  
-
-## User Story
-
-AS AN user for the application
-I WANT to have a good user experience
-SO THAT I can meet my end goals for using the application
-
-## Acceptance Criteria
-
-You will be creating at least 8 acceptance criteria for the application that you will also meet.
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
-> * A repository that has no code
-> * A repository that includes a unique name but nothing else
-> * A repository that includes only a README file but nothing else
-
-This Challenge is graded based on the following criteria:
 
 ### Technical Acceptance Criteria: 55%
 
@@ -35,36 +12,36 @@ This Challenge is graded based on the following criteria:
 * Application user experience is intuitive and easy to navigate.
 * JavaScript is used appropriately and works correctly. 
 
-### Deployment: 20%
+## Usage
 
-* Application deployed at live URL.
+To use this site you can click the nav elements and they will redirect you to the appropriate section of the application.
 
-* Application loads with no errors.
+You can interact with this application and place an order with clickable features/buttons.
 
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user interface style is clean and polished.
-
-### Repository Quality: 10%
-
-* Repository has a unique name.
-* Repository follows best practices for file structure and naming conventions.
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-* Repository contains multiple descriptive commit messages.
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
+This application is responsive for different screen widths.
 
 
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## Credits
+***icons/assets used for "hero" image & shop-item images***
+"Cupcake" clipart: https://www.flaticon.com/free-icon/cupcake_2561550
 
+"Panda-corn" clipart: https://www.vecteezy.com/vector-art/8992215-kids-coloring-pages-cute-panda-donut-character-vector-illustration-eps-and-image
+
+"Quote Bubble" clipart/icon: https://www.flaticon.com/free-icon/speech-bubble_2598893
+
+"Rainbow-Cloud-Stars" clipart/icon: https://www.vecteezy.com/vector-art/2603175-cute-rainbow-with-stars-line-style-icon
+
+***JS for the "shop"feature***
+referenced: https://www.youtube.com/watch?v=YeFzkC2awTM
+
+## License
+
+Please refer to the LICENSE in the repo.
+
+Mock-up Reference:
+
+<a href=./assets/images/application_screenshot_1.png>
+<a href=./assets/images/application_screenshot_2.png>
+<a href=./assets/images/application_screenshot_3.png>
+
+Deployed Website:
