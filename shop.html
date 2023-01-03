@@ -17,63 +17,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lilita+One&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <script src="./assets/js/store.js" async></script>
+    <script src="assets/js/shop.js" async></script>
 </head>
 <body>
     <header id="home">
         <h1>Toronto Cupcakes</h1>
         <nav>
           <ul>
-              <li class="menu"><a href="assets/js/store.js">menu</a></li>
-                <li class="cart"><a href="#cart">cart</a></li>
-                <li class="facts"><a href="#about">about</a></li>
-              <li class="contact"><a href="#contact">contact</a></li>
+            <li class="shop"><a href="shop.html">shop</a></li>
+            <li class="cart"><a href="#cart">cart</a></li<li class="about"><a href="about.html">about</a></li>
+            <li class="contact"><a href="contact.html">contact</a></li>
           </ul>
         </nav>
       </header>
         <section class="menu-section">
             <h2 class="menu-section-header">menu</h2>
             <div class="shop-item">
-                    <img class="shop-cupcake-image" src="assets/images/cupcake.png">
+                    <img class="shop-cupcake-image" src="assets/images/cupcake.png" alt="black and white vector image of a cupcake">
                     <span class="shop-cupcake-flavor">Vanilla Chocolate</span>
                     <div class="shop-cupcake-details"> 
-                    <!-- <div class="shop-cupcake-details" price="$3.75"></div> -->
                         <span class="shop-cupcake-price">$3.75</span>
                         <button class="shop-cupcake-button" type="button">$3.75</button>
-                </div>
-            
+                    </div>
                 <div class="shop-item">
-                    <img class="shop-cupcake-image" src="assets/images/cupcake.png">
+                    <img class="shop-cupcake-image" src="assets/images/cupcake.png" alt="black and white vector image of a cupcake">
                     <span class="shop-cupcake-flavor">Red Velvet</span>
                     <div class="shop-cupcake-details">
-                        <!-- <div class="shop-cupcake-details" price="$3.75"></div> -->
                         <span class="shop-cupcake-price">$3.75</span>
                         <button class="shop-cupcake-button" type="button">$3.75</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    <img class="shop-cupcake-image" src="assets/images/cupcake.png">
+                    <img class="shop-cupcake-image" src="assets/images/cupcake.png" alt="black and white vector image of a cupcake">
                     <span class="shop-cupcake-flavor">Chocolate Oreo</span>
                     <div class="shop-cupcake-details">
-                        <!-- <div class="shop-cupcake-details" price="$3.75"></div> -->
                         <span class="shop-cupcake-price">$3.75</span>
                         <button class="shop-cupcake-button" type="button">$3.75</button>
-                        </div>
+                    </div>
                 </div>
                 <div class="shop-item">
-                        <img class="shop-cupcake-image" src="assets/images/cupcake.png">
+                        <img class="shop-cupcake-image" src="assets/images/cupcake.png" alt="black and white vector image of a cupcake">
                         <span class="shop-cupcake-flavor">Chocolate Vanilla Chocolate Ganache</span>
                         <div class="shop-cupcake-details">
-                            <!-- <div class="shop-cupcake-details" price="$3.75"></div> -->
                             <span class="shop-cupcake-price">$3.75</span> 
                             <button class="shop-cupcake-button" type="button">$3.75</button>
                         </div>
                 </div>
             </div>     
         </section>
-    
-<footer> <a href="#home">Check Ya on the Flip-Side!</a></footer>
-
+        <section class="container cart-section" id="cart">
+            <h2 class="cart-header">cart</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-column">item</span>
+                <span class="cart-price cart-column">price</span>
+                <span class="cart-quantity cart-column">quantity</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn-purchase" type="button">Buy Now! :)</button>
+        </section>
+        
+<footer><a href="#home">Check Ya on the Flip-Side!</a></footer>
 
     </body>
 </html>
