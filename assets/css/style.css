@@ -5,7 +5,6 @@
 }
 
 .root {
-    /* font-family: 'Josefin', 'Koulen', 'lexend';   */
     font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
     font-family: 'Poppins', 'Questrial', 'Quicksand';
 }
@@ -28,12 +27,9 @@ h1 {
     margin: 0;
     width: auto;
     padding: 13px 5px 13px 5px;
-    /* font-family: 'Josefin', 'Koulen', 'lexend'; */
-    /* font-family: 'Fredoka One', 'Rubik Mono One', 'Lilita One', */
     font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
     font-size: 3.5rem;
     line-height: .75;
-    /* background-color: rgb(174, 220, 253); */
     color: black;
 }
 
@@ -62,23 +58,7 @@ nav ul li a {
     transition: all 2s ease-in-out;
 }
 
-/* .menu {
-    border-bottom: 3px solid pink;
-}
-
-.cart {
-    border-bottom: 3px solid rgb(174, 220, 253);
-}
-
-.home {
-    border-bottom: 3px solid rgb(185, 126, 240);
-}
-
-.contact {
-    border-bottom: 3px solid rgb(255, 161, 126);
-} */
-
-li.menu:hover {
+li.shop:hover {
     /* border-bottom: 3px solid pink; */
     background-color: pink;
     border-radius: 13px;
@@ -96,7 +76,7 @@ li.cart:hover {
     margin: 20px 10px;
 }
 
-li.facts:hover {
+li.about:hover {
     /* border-bottom: 3px solid rgb(185, 126, 240); */
     background-color:  rgb(185, 126, 240);
     border-radius: 13px;
@@ -118,16 +98,9 @@ nav ul li a:hover {
     color: white;
 }
 
-/* nav a:hover {
-    background-color: rgb(174, 220, 253);
-    background-size: 75% 75%;
-    color: rgb(57, 57, 57);
-} */
-
 /* responsive features for header and nav */
 @media screen and (max-width: 1034px) {
 header {
-    /* margin-bottom: 100px; */
     padding: 0 0 24px 0;
     justify-content: center;
     text-align: center;
@@ -148,7 +121,6 @@ h1 {
 }
 
 nav ul li a {
-    /* font-size: 1.75rem; */
     color: white;
 }
 
@@ -156,46 +128,12 @@ nav ul li a:hover {
     color: black;
 }
 
-
-/* li.menu {
-    border-bottom: 2px solid pink;
-    margin: 8px;
-    border-radius: 13px;
-    color: pink;
-}
-
-li.cart {
-    border-bottom: 2px solid rgb(174, 220, 253);
-    margin: 8px;
-    border-radius: 13px;
-    color:  rgb(174, 220, 253);
-}
-
-li.facts {
-    border-bottom: 2px solid rgb(185, 126, 240);
-    margin: 8px;
-    border-radius: 13px;
-    color:  rgb(185, 126, 240);
-}
-
-li.contact {
-    border-bottom: 2px solid rgb(255, 161, 126);
-    margin: 8px;
-    border-radius: 13px;
-    color: rgb(255, 161, 126);
-} */
-
-
 nav {
     justify-content: center;
 }
 } 
 
 @media screen and (max-width: 768px) {
-    /* header {
-        margin-bottom: 125px;
-    } */
-
 h1 {
   justify-content: center;
   text-align: center;
@@ -210,15 +148,35 @@ nav ul li a {
 }
 
 @media screen and (max-width: 390px) {
-    /* header {
-        margin-bottom: 50px;
-    } */
     nav ul li a { 
-        font-size: .75rem;
-        padding: 6px 12px;
+        font-size: .5rem;
+        padding: 3px;
     }
 }
 
+li.shop:hover {
+    border-radius: 13px;
+    padding: 12px 10px;
+    margin: 10px;
+}
+
+li.cart:hover {
+    border-radius: 13px;
+    padding: 12px 10px;
+    margin: 10px;
+}
+
+li.about:hover {
+    border-radius: 13px;
+    padding: 12px 10px;
+    margin: 10px;
+}
+
+li.contact:hover {
+    border-radius: 13px;
+    padding: 12px 10px;
+    margin: 10px;
+}
 
 /* hero section info */
 /* referenced https://www.w3schools.com/howto/howto_css_hero_image.asp */
@@ -236,17 +194,17 @@ nav ul li a {
 }
 
 .hero-text {
+    visibility: hidden;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-self: end;
-    background-color: pink;
-    color: black;
+    background-color: black;
+    color: white;
     padding: 13px 8px 13px 8px;
     max-height: 65px;
     margin-bottom: 26px;
     font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
-    /* font-size: 13vw; */
     line-height: .8;
 }
 
@@ -262,14 +220,13 @@ h2 {
 @media screen and (max-width: 1034px) {
     .hero {
     min-height: 1100px;
-    /* flex-shrink: inherit; */
     flex-wrap: wrap;
 }
 
 .hero-text {
+    visibility: visible;
     justify-content: center;
     text-align: center;
-    /* font-size: 5vw; */
     background-color: black;
     margin: 0;
     width: 100%;
@@ -287,8 +244,6 @@ h2 {
 @media screen and (max-width: 768px) {
 .hero {
     min-height: 700px;
-    /* flex-shrink: inherit; */
-    /* flex-wrap: wrap; */
 }
 }
 
@@ -317,24 +272,75 @@ main {
 }
 
 
+/* about */
+.about-page-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-page-section h3 {
+    font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
+    text-align: center;
+    justify-content: center;
+    margin:  50px 0 50px 0;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    font-size: 5vw;
+    color: white;
+    background-color: rgb(185, 126, 240);
+  }
+
+  .about-page-section div {
+    display: flex;
+    margin: 0;
+    font-family: 'Poppins', 'Questrial', 'Quicksand';
+    font-size: 1.75vw;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    transition: all 2s ease-in;
+    padding: 8px 16px;
+    
+}
+
+  .about-page-section p {
+    font-family: 'Poppins', 'Questrial', 'Quicksand';
+    font-size: 1.75vw;
+    margin: 0 15px 0 15px;
+}
+
+/* responsive features for about section */
+@media screen and (max-width: 768px){
+    .about-page-section div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;  
+    }
+}
 
 
-
-
-/* contact me */
+/* contact */
 
 h3 {
     font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
-    text-align: start;
-    margin:  50px 15px 15px 15px;
-    font-size: 4vw;
-    color: black;
+    text-align: center;
+    margin:  50px 0 50px 0;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    font-size: 5vw;
+    color: white;
+    background-color: rgb(255, 161, 126);
   }
 
 address {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 address ul li {
@@ -343,10 +349,6 @@ address ul li {
     flex-direction: column;
     flex-wrap: nowrap;
 }
-
-/* referenced https://www.google.com/search?q=using+transitions+for+menu+items+css&oq=using+transitions+for+menu+items+css&aqs=chrome..69i57.8618j0j7&sourceid=chrome&ie=UTF-8#cobssid=s&fpstate=ive&vld=cid:9ed0cbfb,vid:e9ol1i4xkYI */
-/* referenced https://www.youtube.com/watch?v=bLn15pjC6Pc */
-/* referenced https://www.google.com/search?q=using+transitions+for+menu+items+css&oq=using+transitions+for+menu+items+css&aqs=chrome..69i57.8618j0j7&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:8b33a17b,vid:YKAzmVA6vqY */
 
 address ul li a {
     display: inline-block;
@@ -364,30 +366,33 @@ address ul li a {
 
 li.tel:hover {
     /* border-bottom: 3px solid pink; */
-    background-color: rgb(255, 161, 126);
+    background-color: pink;
     background-size: 60%; 
+    margin: ;
 }
 
 li.email:hover {
     /* border-bottom: 3px solid rgb(174, 220, 253); */
-    background-color:  rgb(185, 126, 240);
+    background-color:  rgb(174, 220, 253);
     background-size: 60%;
 }
 
 li.address:hover {
     /* border-bottom: 3px solid rgb(185, 126, 240); */
-    background-color:  rgb(174, 220, 253);
+    background-color:  rgb(185, 126, 240);
     background-size: 60%;
 }
 
 li.hours:hover {
     /* border-bottom: 3px solid rgb(255, 161, 126); */
-    background-color: pink;
+    background-color: rgb(255, 161, 126);
     background-size: 60%;
 }
 
 
-/* responsive features for contact info */
+
+
+/* responsive features for contact section */
 @media screen and (max-width: 1034px) {
     address ul li a {
         display: flex;
@@ -406,19 +411,19 @@ li.hours:hover {
 
 .address a:hover {
     background-size: 75% 75%;
-     color: rgb(174, 220, 253);
+     color: white;
  }
 
  footer {
     /* font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One'; */
     font-family: 'Poppins', 'Questrial', 'Quicksand';
     text-align: center;
-    margin:  50px 15px 50px 15px;
-    font-size: 3vw;
+    margin:  50px 15px 15px 15px;
+    font-size: 2.25vw;
     color: black;
  }
  
- footer a {
+footer a {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -427,53 +432,51 @@ li.hours:hover {
  footer a:hover {
     /* background-color: black;
     color: white; */
-    background-color:rgb(174, 220, 253);
+    background-color: black;
     color: white;
     border-radius: 13px;
     padding: 11px 16px;
 }
 
-@media screen and (max-width: 390px) {
-footer {
-    text-align: center;
-    font-size: 3vw;
- }
-}
-
-.hidden {
-    display: none;
-  }
-
-/* menu page */
-/* referenced: https://swiperjs.com/get-started */
-/* referenced: https://codevoweb.com/lc26-build-food-ordering-website-html-css-javascript/ */
-/* .swiper {
-    width: 600px;
-    height: 300px;
-  } */
-
-h2.menu-section-header {
-    font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
-    text-align: center;
-    margin:  0;
-    padding: 0 0 15px 0;
-    font-size: 5vw;
-    background-color: pink;
-    color: white;
-    width: 100%;
+@media screen and (max-width: 768px){
+address {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     }
 
+    address ul li a {
+        margin: 0 15px;
+        font-size: 3.5vw;
+    }
 
-/* store page */
+    img {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    margin: 35px 0 0 0 ;
+    justify-content: center;
+    /* border-bottom: 40px solid rgb(255, 161, 126); */
+    } 
+}
 
-/* section {
-    font-family: 'Poppins', 'Questrial', 'Quicksand';
-    font-size: 5vw; */
-    /* line-height: 22px; */
-    /* margin: 13px;
-    padding: 13px;
-    text-align: center; */
-/* } */
+@media screen and (max-width: 390px) {
+    footer {
+        text-align: center;
+        font-size: 3vw;
+    }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+/* shop page */
+/* referenced: https://www.youtube.com/watch?v=YeFzkC2awTM */
+
 .shop-item {
     display: flex;
     flex-wrap: wrap;
@@ -494,15 +497,10 @@ h2.menu-section-header {
 }
 
 .shop-cupcake-image {
-    /* display: flex; */
-    /* justify-content: center;
-    text-align: center; */
-   /* Photo Credit to Betwixt Studios */
     max-height: 1200px;
     width: 100%;
     object-fit: cover;
     margin: 75px 0 25px 0;
-    /* position: relative; */
 }
 
 
@@ -513,8 +511,7 @@ h2.menu-section-header {
     color: white;
     font-family: 'Poppins', 'Questrial', 'Quicksand';
     font-size: 5vw;
-    /* line-height: 22px; */
-    margin: 13px;
+    margin: 13px 400px 0 400px;
     padding: 13px;
     text-align: end;
     cursor: pointer;
@@ -525,23 +522,12 @@ h2.menu-section-header {
         visibility: hidden;
     }
 
-    /* respponsive features for shop page */
-
+    /* responsive features for shop page */
 
     @media screen and (max-width: 1034px) {
-        /* .menu-section {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        } */
 
         .shop-item {
             margin: 0 50px 50px 50px;
-            /* min-width: 200px; */
-            /* display: flex; */
-            /* flex-direction: row; */
-            /* flex-wrap: wrap; */
-            /* flex-basis: 48.75%; */
             justify-content: center;
             text-align: center;
             transition: all 2s ease-in-out;
@@ -556,12 +542,9 @@ h2.menu-section-header {
         }
         
         .shop-cupcake-image {
-            /* max-height: 300px;
-            width: 100%; */
             width: 500px;
             height: 500px;
             object-fit: cover;
-            /* position: relative; */
         }
         
         .shop-cupcake-button {
@@ -581,7 +564,6 @@ h2.menu-section-header {
         .shop-cupcake-flavor {
             font-size: 5vw;
             width: 100%;
-            /* line-height: 22px; */
             margin: 15px 0 15px 0;
         }
         
@@ -615,21 +597,15 @@ h2.menu-section-header {
             font-family: 'Poppins', 'Questrial', 'Quicksand';
             font-size: 5vw;
             width: 100%;
-            /* line-height: 22px; */
             margin: 15px 0 15px 0;
             padding: 13px;
             text-align: center;
         }
         
         .shop-cupcake-image {
-            /* display: flex; */
-            /* justify-content: center;
-            text-align: center; */
-           /* Photo Credit to Betwixt Studios */
             max-height: 250px;
             width: 250px;
             object-fit: cover;
-            /* position: relative; */
         }
         
         .shop-cupcake-button {
@@ -639,7 +615,6 @@ h2.menu-section-header {
             color: white;
             font-family: 'Poppins', 'Questrial', 'Quicksand';
             font-size: 5vw;
-            /* line-height: 22px; */
             margin: 0;
             padding: 13px;
             text-align: end;
@@ -654,8 +629,9 @@ h2.menu-section-header {
     .cart-header {
         font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
         text-align: center;
-        margin:  0;
-        padding: 0 0 15px 0;
+        margin:  50px 0 50px 0;
+        padding: 15px 0 15px 0;
+        width: 100%;
         font-size: 5vw;
         background-color:rgb(174, 220, 253);
         color: white;
@@ -666,6 +642,7 @@ h2.menu-section-header {
         display: flex;
         font-family: 'Poppins', 'Questrial', 'Quicksand';
         font-size: 3vw;
+        margin: 0 15px 0 15px;
     }
     
     .cart-column {
@@ -701,7 +678,7 @@ h2.menu-section-header {
     .cart-item {
         font-family: 'Poppins', 'Questrial', 'Quicksand';
         color: black;
-        margin: 10px 15px 0 15px;
+        margin: 0px 15px 0 15px;
         font-size: 1.5vw;
     }
 
@@ -747,6 +724,8 @@ h2.menu-section-header {
     
     .cart-row:last-child {
         border-bottom: 70px solid rgb(174, 220, 253);
+        width: 100%;
+        margin: 0;
     }
     
     .cart-row:last-child .cart-column {
@@ -762,7 +741,6 @@ h2.menu-section-header {
     }
     
     .cart-total-title {
-        font-weight: bold;
         font-size: 1.5em;
         color: black;
         margin-right: 20px;
@@ -788,35 +766,38 @@ h2.menu-section-header {
     }
 
  
-/* Responsive Features for Cart */
+/* responsive features for cart */
 @media screen and (max-width: 1034px) {
     .cart-row {
         display: flex;
         width: 100%;
         /* margin-bottom: 100px; */
         padding: 0 0 24px 0;
+        margin: 0 0 0 0;
         justify-content: center;
         text-align: center;
         transition: all 2s ease-in-out;
     }
-    
-    /* h1 {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 24px 0 21px 0;
-        width: 100%;
-        padding: 18px 0 18px 0;
-        font-size: 10vw;
-        color: white;
-    } */
 }
 
-    @media screen and (max-width: 390px) {
-        .btn-purchase {
-            margin: 40px auto 80px auto;
-            font-size: 5vw;
-        }
+@media screen and (max-width: 390px) {
+
+    .cart-quantity-input {
+        height: 29px;
+        width: 40px;
+        font-size: 1.2em;
+        margin-right: 15px;
     }
+
+    .cart-row:last-child {
+        border-bottom: 50px solid rgb(174, 220, 253);
+        margin: 0;
+    }
+
+    .btn-purchase {
+        margin: 40px auto 80px auto;
+        font-size: 5vw;
+    }
+}
 
   

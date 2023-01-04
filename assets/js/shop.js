@@ -107,25 +107,7 @@ function addItemToCart(title, price, imageSrc) {
         <button class="btn-remove" type="button">remove</button>
         <button class="btn-add" type="button">add</button>
         </div>`
-    
-    
-    // `
-    // <div class="shop-item">
-    //     <img class="shop-cupcake-image" src="${imageSrc}">
-    // <span class="shop-cupcake-flavor">${title}</span>
-    // </div>
-    // <span class="shop-cupcake-price">${price}</span>
-    // <span class="cart-price cart-column">price</span>
-    // <div class="cart-quantity cart-column">quantity</div>
-    // <input class="cart-quantity-input" type="number" value="0">
-    // <button class="btn-remove" type="button">remove</button>
-    // </div>`
-    // cartRow.innerHTML = cartRowContents
-    // cartItems.append(cartRow)
 
-
-
-    // cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
    
