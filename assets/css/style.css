@@ -33,6 +33,12 @@ h1 {
     color: black;
 }
 
+h1 a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -69,7 +75,7 @@ li.shop:hover {
 
 li.cart:hover {
     /* border-bottom: 3px solid rgb(174, 220, 253); */
-    background-color:  rgb(174, 220, 253);
+    background-color: rgb(174, 220, 253);
     border-radius: 13px;
     /* background-size: 60%; */
     padding: 0 0 8px 0;
@@ -122,6 +128,7 @@ h1 {
 
 nav ul li a {
     color: white;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -152,30 +159,30 @@ nav ul li a {
         font-size: .5rem;
         padding: 3px;
     }
-}
 
-li.shop:hover {
-    border-radius: 13px;
-    padding: 12px 10px;
-    margin: 10px;
-}
+    li.shop:hover {
+        border-radius: 13px;
+        padding: 12px 10px;
+        margin: 10px;
+    }
 
-li.cart:hover {
-    border-radius: 13px;
-    padding: 12px 10px;
-    margin: 10px;
-}
+    li.cart:hover {
+        border-radius: 13px;
+        padding: 12px 10px;
+        margin: 10px;
+    }
 
-li.about:hover {
-    border-radius: 13px;
-    padding: 12px 10px;
-    margin: 10px;
-}
+    li.about:hover {
+        border-radius: 13px;
+        padding: 12px 10px;
+        margin: 10px;
+    }
 
-li.contact:hover {
-    border-radius: 13px;
-    padding: 12px 10px;
-    margin: 10px;
+    li.contact:hover {
+        border-radius: 13px;
+        padding: 12px 10px;
+        margin: 10px;
+    }
 }
 
 /* hero section info */
@@ -260,7 +267,7 @@ h2 {
         padding: 15px 0 15px 0;
         font-size: 5vw;
     }
-    }
+   
 
     h2 {
         font-size: 4vw;
@@ -268,9 +275,9 @@ h2 {
 
 main {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
+    }
 }
-
 
 /* about */
 .about-page-section {
@@ -476,6 +483,18 @@ address {
 
 /* shop page */
 /* referenced: https://www.youtube.com/watch?v=YeFzkC2awTM */
+.menu-section h2 {
+    font-family: 'Fredoka One', 'Lilita One', 'Rubik Mono One';
+    text-align: center;
+    margin:  50px 0 50px 0;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    font-size: 5vw;
+    background-color: pink;
+    color: white;
+    width: 100%;
+  }
+
 
 .shop-item {
     display: flex;
