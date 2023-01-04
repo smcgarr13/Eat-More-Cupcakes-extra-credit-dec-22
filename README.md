@@ -33,6 +33,7 @@ referenced: https://www.youtube.com/watch?v=YeFzkC2awTM
 Please refer to the LICENSE in the repo.
 
 Mock-up Reference:
+
 ![application_ref_image_1](https://user-images.githubusercontent.com/117788958/210471967-61a6754a-91de-4670-8304-3344fe9bb9f3.png)
 ![application_ref_image_2](https://user-images.githubusercontent.com/117788958/210471969-73b7a642-a018-4bbb-a06c-e22e752b8992.png)
 ![application_ref_image_3](https://user-images.githubusercontent.com/117788958/210471971-64e47c20-cad3-403c-a6dc-4d924ef4df52.png)
