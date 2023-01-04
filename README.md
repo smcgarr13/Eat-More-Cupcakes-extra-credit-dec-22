@@ -6,12 +6,6 @@ extra credit challenge: Spruce up an application for an existing business/non-pr
 This code was created to provide a better user experience for the application.
 
 
-### Technical Acceptance Criteria: 55%
-
-* Application refactor/build matches the desired end goals of the business/non-profit. 
-* Application user experience is intuitive and easy to navigate.
-* JavaScript is used appropriately and works correctly. 
-
 ## Usage
 
 To use this site you can click the nav elements and they will redirect you to the appropriate section of the application.
@@ -45,3 +39,4 @@ Mock-up Reference:
 <a href=./assets/images/application_screenshot_3.png>
 
 Deployed Website:
+https://smcgarr13.github.io/Eat-More-Cupcakes-extra-credit-dec-22/shop.html#home
