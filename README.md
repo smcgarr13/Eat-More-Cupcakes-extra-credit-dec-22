@@ -33,10 +33,11 @@ referenced: https://www.youtube.com/watch?v=YeFzkC2awTM
 Please refer to the LICENSE in the repo.
 
 Mock-up Reference:
-
-<a href=./assets/images/application_screenshot_1.png>
-<a href=./assets/images/application_screenshot_2.png>
-<a href=./assets/images/application_screenshot_3.png>
+![application_ref_image_1](https://user-images.githubusercontent.com/117788958/210471967-61a6754a-91de-4670-8304-3344fe9bb9f3.png)
+![application_ref_image_2](https://user-images.githubusercontent.com/117788958/210471969-73b7a642-a018-4bbb-a06c-e22e752b8992.png)
+![application_ref_image_3](https://user-images.githubusercontent.com/117788958/210471971-64e47c20-cad3-403c-a6dc-4d924ef4df52.png)
+![application_ref_image_4](https://user-images.githubusercontent.com/117788958/210471972-b27b04f5-00ab-4fd8-a757-4b9595aefea9.png)
+![application_ref_image_5](https://user-images.githubusercontent.com/117788958/210471973-2a5c1b18-def9-416c-9b8a-e6d44cdf1a53.png)
 
 Deployed Website:
 https://smcgarr13.github.io/Eat-More-Cupcakes-extra-credit-dec-22/shop.html#home
